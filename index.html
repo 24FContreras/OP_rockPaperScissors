@@ -8,9 +8,41 @@
   <title>Rock Paper Scissors!</title>
   <link rel="stylesheet" href="assets/css/reset.css">
   <link rel="stylesheet" href="assets/css/main.css">
+  <!-- FONTAWESOME -->
+  <script src="https://kit.fontawesome.com/1872a23027.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+
+  <main>
+    <div class="result-window">
+      <h1>Rock Paper Scissors</h1>
+      <p>Wanna try your luck? Choose your weapon and see if you can beat the machine. First to reach 5 points win!</p>
+
+      <section class="results">
+        <div class="score">
+          <h2>Player</h2>
+          <p class="digit" id="playerScore">0</p>
+        </div>
+        <div>VS</div>
+        <div class="score">
+          <h2>CPU</h2>
+          <p class="digit" id="cpuScore">0</p>
+        </div>
+      </section>
+      <h3 id="roundResultDisplay"> </h3>
+
+    </div>
+
+    <section class="buttons">
+      <button value="Rock"><i class="fa-solid fa-hand-back-fist"></i></button>
+      <button value="Paper"><i class="fa-solid fa-hand"></i></button>
+      <button value="Scissors"><i class="fa-solid fa-hand-scissors"></i></button>
+    </section>
+
+
+  </main>
+
 
 
 

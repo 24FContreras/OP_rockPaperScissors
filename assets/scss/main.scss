@@ -1,10 +1,95 @@
 //FONTS AND VARIABLES
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
 
 
 // LAYOUT
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Share Tech Mono', monospace;
+  padding: 5rem;
+  background-color: hsl(229, 20%, 20%);
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.result-window {
+  min-height: 400px;
+  color: white;
+  border-radius: 10px;
+  border: 1rem solid gray;
+  padding: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+
+  >* {
+    margin-bottom: 1rem;
+  }
+}
+
+.results {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.score {}
+
+.digit {
+  font-size: 3rem;
+}
+
+
+.buttons {
+  width: 600px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5rem;
+
+  button {
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    font-size: 4.5rem;
+    color: white;
+    box-shadow: 2px 2px 15px hsla(0, 0%, 0%, 0.25), inset 0px 0px 30px -20px rgba(0, 0, 0, 0.5);
+    border: .75rem solid white;
+    transition: all .3s ease;
+
+    &:hover {
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.55);
+    }
+
+    &:active {
+      transform: scale(0.9);
+    }
+
+    &:focus {
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.55);
+    }
+  }
+
+  i {
+    text-shadow: 5px 5px 2px hsla(0, 0%, 0%, 0.25);
+  }
+
+  >:nth-child(1) {
+    background-color: hsl(345, 99%, 58%);
+  }
+
+  >:nth-child(2) {
+    background-color: hsl(50, 99%, 50%);
+  }
+
+  >:nth-child(3) {
+    background-color: hsl(190, 81%, 47%);
+  }
+}
+
+#roundResultDisplay {
+  padding: 1rem;
 }
